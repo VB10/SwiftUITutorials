@@ -8,20 +8,62 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        sampleStackView()
+    }
+        
+    
+    fileprivate func sampleHorizontalView() -> some View {
+        return HStack{
+            Spacer().frame(width: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Text("@vb10")
+                .padding()
+            Text("@vb10")
+                .padding()
+            Text("@vb10")
+                .padding()
+            Text("@vb10")
+                .padding()
+            Color.red
+            Spacer().frame(width: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        }
+    }
+    
+    fileprivate func sampleVerticalView() -> some View {
+        return VStack{
+            Spacer().frame(width: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Text("@vb10")
+                .padding()
+            Text("@vb10")
+                .padding()
+            Text("@vb10")
+                .padding()
+            Text("@vb10")
+                .padding()
+            Color.red
+            Spacer().frame(width: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        }
+    }
+    
+    fileprivate func sampleStackView() -> some View {
+        return ZStack(alignment: Alignment.bottom){
+            Color.red
+            Spacer().frame(width: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Text("@vb10")
+                .padding()
+            Text("@vb10")
+                .padding()
+            Text("@v")
+                .padding()
+            Spacer().frame(width: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 
-struct HelloView: View {
-    var body : some View {
-        Image.init(systemName: "square.and.arrow.up")
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HelloView()
+        ContentView()
     }
 }
