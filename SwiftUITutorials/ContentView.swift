@@ -7,11 +7,46 @@
 
 import SwiftUI
 
-struct ContentView: View {
 
+
+struct IconFieldView: View {
+    
+    var iconName: String = "hello"
+    @State var textFieldValue: String = ""
+    
     var body: some View {
         VStack {
+            TextField("Placeholder", text: $textFieldValue)
+            Text(textFieldValue)
+                .bold()
+                .font(.largeTitle)
+            
+            Image(systemName: textFieldValue.lowercased()).frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            
+        }
+    
+    }
+    
+    
+}
 
+
+struct ContentView: View {
+
+   
+    
+    var body: some View {
+        groupViews()
+    }
+    
+    
+    
+    
+    
+//   Lesson 5
+    fileprivate func groupViews() -> some View {
+        return VStack {
+            
             Group {
                 //            MARK: Login View
                 //            TODO: Fix user name!
@@ -104,6 +139,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        IconFieldView()
     }
 }
