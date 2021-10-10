@@ -24,9 +24,7 @@ struct IconFieldView: View {
             Image(systemName: textFieldValue.lowercased()).frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
         }
-    
     }
-    
     
 }
 
