@@ -14,6 +14,9 @@
 		357F7D7C26D30FE4004182D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357F7D7B26D30FE4004182D6 /* Assets.xcassets */; };
 		357F7D7F26D30FE4004182D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357F7D7E26D30FE4004182D6 /* Preview Assets.xcassets */; };
 		3584539C27139F13006C3225 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584539B27139F13006C3225 /* SampleListView.swift */; };
+		35F77FC3272630CF00A925A9 /* ModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F77FC2272630CF00A925A9 /* ModelListView.swift */; };
+		35F77FC5272630FD00A925A9 /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F77FC4272630FD00A925A9 /* TweetModel.swift */; };
+		35F77FC72726338B00A925A9 /* TweetCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F77FC62726338B00A925A9 /* TweetCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		357F7D7E26D30FE4004182D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		357F7D8026D30FE4004182D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3584539B27139F13006C3225 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
+		35F77FC2272630CF00A925A9 /* ModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListView.swift; sourceTree = "<group>"; };
+		35F77FC4272630FD00A925A9 /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
+		35F77FC62726338B00A925A9 /* TweetCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +102,20 @@
 		3584539827139EEB006C3225 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				35F77FC1272630C000A925A9 /* ModelList */,
 				3584539B27139F13006C3225 /* SampleListView.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		35F77FC1272630C000A925A9 /* ModelList */ = {
+			isa = PBXGroup;
+			children = (
+				35F77FC2272630CF00A925A9 /* ModelListView.swift */,
+				35F77FC4272630FD00A925A9 /* TweetModel.swift */,
+				35F77FC62726338B00A925A9 /* TweetCards.swift */,
+			);
+			path = ModelList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +196,10 @@
 				3584539C27139F13006C3225 /* SampleListView.swift in Sources */,
 				357F7D7A26D30FE2004182D6 /* ContentView.swift in Sources */,
 				3518296F270A62840086818B /* CircleTextImageView.swift in Sources */,
+				35F77FC5272630FD00A925A9 /* TweetModel.swift in Sources */,
+				35F77FC72726338B00A925A9 /* TweetCards.swift in Sources */,
 				357F7D7826D30FE2004182D6 /* SwiftUITutorialsApp.swift in Sources */,
+				35F77FC3272630CF00A925A9 /* ModelListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
