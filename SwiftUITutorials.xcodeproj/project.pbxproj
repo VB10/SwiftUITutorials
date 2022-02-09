@@ -11,6 +11,9 @@
 		3518296F270A62840086818B /* CircleTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518296E270A62840086818B /* CircleTextImageView.swift */; };
 		3568CDD3276FD6B500464155 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3568CDD2276FD6B500464155 /* CustomTabView.swift */; };
 		3568CDD5276FD8F100464155 /* CustomTabIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3568CDD4276FD8F000464155 /* CustomTabIndex.swift */; };
+		357039E927B339D800B2AE4D /* EnviromentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357039E827B339D800B2AE4D /* EnviromentView.swift */; };
+		357039EB27B33A9700B2AE4D /* Spacer+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357039EA27B33A9700B2AE4D /* Spacer+Constant.swift */; };
+		357039EF27B33F1100B2AE4D /* DateControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357039EE27B33F1100B2AE4D /* DateControlView.swift */; };
 		357F7D7826D30FE2004182D6 /* SwiftUITutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F7D7726D30FE2004182D6 /* SwiftUITutorialsApp.swift */; };
 		357F7D7A26D30FE2004182D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F7D7926D30FE2004182D6 /* ContentView.swift */; };
 		357F7D7C26D30FE4004182D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357F7D7B26D30FE4004182D6 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		3518296E270A62840086818B /* CircleTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImageView.swift; sourceTree = "<group>"; };
 		3568CDD2276FD6B500464155 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		3568CDD4276FD8F000464155 /* CustomTabIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndex.swift; sourceTree = "<group>"; };
+		357039E827B339D800B2AE4D /* EnviromentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentView.swift; sourceTree = "<group>"; };
+		357039EA27B33A9700B2AE4D /* Spacer+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spacer+Constant.swift"; sourceTree = "<group>"; };
+		357039EE27B33F1100B2AE4D /* DateControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateControlView.swift; sourceTree = "<group>"; };
 		357F7D7426D30FE2004182D6 /* SwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		357F7D7726D30FE2004182D6 /* SwiftUITutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsApp.swift; sourceTree = "<group>"; };
 		357F7D7926D30FE2004182D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +86,16 @@
 			path = CustomTabView;
 			sourceTree = "<group>";
 		};
+		357039E727B339A900B2AE4D /* Enıroment */ = {
+			isa = PBXGroup;
+			children = (
+				357039E827B339D800B2AE4D /* EnviromentView.swift */,
+				357039EA27B33A9700B2AE4D /* Spacer+Constant.swift */,
+				357039EE27B33F1100B2AE4D /* DateControlView.swift */,
+			);
+			path = "Enıroment";
+			sourceTree = "<group>";
+		};
 		357F7D6B26D30FE2004182D6 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +137,7 @@
 		3584539827139EEB006C3225 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				357039E727B339A900B2AE4D /* Enıroment */,
 				3568CDD1276FD6A600464155 /* CustomTabView */,
 				35CE465E27389A18002035E9 /* Navigation */,
 				35F77FC1272630C000A925A9 /* ModelList */,
@@ -225,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CE466427389CFC002035E9 /* UserViewDetail.swift in Sources */,
+				357039EB27B33A9700B2AE4D /* Spacer+Constant.swift in Sources */,
+				357039EF27B33F1100B2AE4D /* DateControlView.swift in Sources */,
 				3584539C27139F13006C3225 /* SampleListView.swift in Sources */,
 				357F7D7A26D30FE2004182D6 /* ContentView.swift in Sources */,
 				35CE466027389A31002035E9 /* NavigationUsers.swift in Sources */,
@@ -234,6 +253,7 @@
 				3568CDD3276FD6B500464155 /* CustomTabView.swift in Sources */,
 				357F7D7826D30FE2004182D6 /* SwiftUITutorialsApp.swift in Sources */,
 				3568CDD5276FD8F100464155 /* CustomTabIndex.swift in Sources */,
+				357039E927B339D800B2AE4D /* EnviromentView.swift in Sources */,
 				35CE466227389A53002035E9 /* NavigationUserModel.swift in Sources */,
 				35F77FC3272630CF00A925A9 /* ModelListView.swift in Sources */,
 			);
