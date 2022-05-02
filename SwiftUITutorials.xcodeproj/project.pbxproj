@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350382D3281F6A46000A16F7 /* RandomFoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350382D2281F6A46000A16F7 /* RandomFoxView.swift */; };
+		350382D5281F6C3F000A16F7 /* FoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350382D4281F6C3F000A16F7 /* FoxModel.swift */; };
+		350382D7281F6C79000A16F7 /* FoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350382D6281F6C79000A16F7 /* FoxService.swift */; };
+		350382DA281F6CE7000A16F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 350382D9281F6CE7000A16F7 /* Alamofire */; };
+		350382DD281F6F0E000A16F7 /* FoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350382DC281F6F0E000A16F7 /* FoxViewModel.swift */; };
+		350382E0281F70EF000A16F7 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 350382DF281F70EF000A16F7 /* ActivityIndicatorView */; };
 		3518296B270A5FEB0086818B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3518296A270A5FEB0086818B /* Kingfisher */; };
 		3518296F270A62840086818B /* CircleTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518296E270A62840086818B /* CircleTextImageView.swift */; };
 		3568CDD3276FD6B500464155 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3568CDD2276FD6B500464155 /* CustomTabView.swift */; };
@@ -28,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350382D2281F6A46000A16F7 /* RandomFoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFoxView.swift; sourceTree = "<group>"; };
+		350382D4281F6C3F000A16F7 /* FoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxModel.swift; sourceTree = "<group>"; };
+		350382D6281F6C79000A16F7 /* FoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxService.swift; sourceTree = "<group>"; };
+		350382DC281F6F0E000A16F7 /* FoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxViewModel.swift; sourceTree = "<group>"; };
 		3518296E270A62840086818B /* CircleTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImageView.swift; sourceTree = "<group>"; };
 		3568CDD2276FD6B500464155 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		3568CDD4276FD8F000464155 /* CustomTabIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndex.swift; sourceTree = "<group>"; };
@@ -55,12 +65,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				3518296B270A5FEB0086818B /* Kingfisher in Frameworks */,
+				350382E0281F70EF000A16F7 /* ActivityIndicatorView in Frameworks */,
+				350382DA281F6CE7000A16F7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350382CD281F69B3000A16F7 /* FoxViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				350382D1281F69FB000A16F7 /* Model */,
+				350382D0281F69F0000A16F7 /* Service */,
+				350382CF281F69E7000A16F7 /* ViewModel */,
+				350382CE281F69D9000A16F7 /* View */,
+			);
+			path = FoxViewModel;
+			sourceTree = "<group>";
+		};
+		350382CE281F69D9000A16F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				350382D2281F6A46000A16F7 /* RandomFoxView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		350382CF281F69E7000A16F7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				350382DC281F6F0E000A16F7 /* FoxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		350382D0281F69F0000A16F7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				350382D6281F6C79000A16F7 /* FoxService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		350382D1281F69FB000A16F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				350382D4281F6C3F000A16F7 /* FoxModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3518296C270A624F0086818B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +192,7 @@
 		3584539827139EEB006C3225 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				350382CD281F69B3000A16F7 /* FoxViewModel */,
 				357039E727B339A900B2AE4D /* Enıroment */,
 				3568CDD1276FD6A600464155 /* CustomTabView */,
 				35CE465E27389A18002035E9 /* Navigation */,
@@ -184,6 +240,8 @@
 			name = SwiftUITutorials;
 			packageProductDependencies = (
 				3518296A270A5FEB0086818B /* Kingfisher */,
+				350382D9281F6CE7000A16F7 /* Alamofire */,
+				350382DF281F70EF000A16F7 /* ActivityIndicatorView */,
 			);
 			productName = SwiftUITutorials;
 			productReference = 357F7D7426D30FE2004182D6 /* SwiftUITutorials.app */;
@@ -214,6 +272,8 @@
 			mainGroup = 357F7D6B26D30FE2004182D6;
 			packageReferences = (
 				35182969270A5FEB0086818B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				350382D8281F6CE7000A16F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				350382DE281F70EF000A16F7 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = 357F7D7526D30FE2004182D6 /* Products */;
 			projectDirPath = "";
@@ -242,16 +302,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CE466427389CFC002035E9 /* UserViewDetail.swift in Sources */,
+				350382D5281F6C3F000A16F7 /* FoxModel.swift in Sources */,
 				357039EB27B33A9700B2AE4D /* Spacer+Constant.swift in Sources */,
 				357039EF27B33F1100B2AE4D /* DateControlView.swift in Sources */,
 				3584539C27139F13006C3225 /* SampleListView.swift in Sources */,
 				357F7D7A26D30FE2004182D6 /* ContentView.swift in Sources */,
 				35CE466027389A31002035E9 /* NavigationUsers.swift in Sources */,
 				3518296F270A62840086818B /* CircleTextImageView.swift in Sources */,
+				350382D3281F6A46000A16F7 /* RandomFoxView.swift in Sources */,
+				350382D7281F6C79000A16F7 /* FoxService.swift in Sources */,
 				35F77FC5272630FD00A925A9 /* TweetModel.swift in Sources */,
 				35F77FC72726338B00A925A9 /* TweetCards.swift in Sources */,
 				3568CDD3276FD6B500464155 /* CustomTabView.swift in Sources */,
 				357F7D7826D30FE2004182D6 /* SwiftUITutorialsApp.swift in Sources */,
+				350382DD281F6F0E000A16F7 /* FoxViewModel.swift in Sources */,
 				3568CDD5276FD8F100464155 /* CustomTabIndex.swift in Sources */,
 				357039E927B339D800B2AE4D /* EnviromentView.swift in Sources */,
 				35CE466227389A53002035E9 /* NavigationUserModel.swift in Sources */,
@@ -444,6 +508,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		350382D8281F6CE7000A16F7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		350382DE281F70EF000A16F7 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		35182969270A5FEB0086818B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -455,6 +535,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		350382D9281F6CE7000A16F7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 350382D8281F6CE7000A16F7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		350382DF281F70EF000A16F7 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 350382DE281F70EF000A16F7 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
 		3518296A270A5FEB0086818B /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 35182969270A5FEB0086818B /* XCRemoteSwiftPackageReference "Kingfisher" */;
