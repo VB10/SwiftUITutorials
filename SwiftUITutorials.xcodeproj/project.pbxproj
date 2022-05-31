@@ -20,6 +20,12 @@
 		357039E927B339D800B2AE4D /* EnviromentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357039E827B339D800B2AE4D /* EnviromentView.swift */; };
 		357039EB27B33A9700B2AE4D /* Spacer+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357039EA27B33A9700B2AE4D /* Spacer+Constant.swift */; };
 		357039EF27B33F1100B2AE4D /* DateControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357039EE27B33F1100B2AE4D /* DateControlView.swift */; };
+		3577D0CD28458AD600159ABA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3577D0CC28458AD600159ABA /* User.swift */; };
+		3577D0CF28458B0400159ABA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3577D0CE28458B0400159ABA /* UserService.swift */; };
+		3577D0D328458CCF00159ABA /* Logging+AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3577D0D228458CCF00159ABA /* Logging+AFError.swift */; };
+		3577D0D628458D5400159ABA /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 3577D0D528458D5400159ABA /* Logging */; };
+		3577D0D828458EFC00159ABA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3577D0D728458EFC00159ABA /* UserViewModel.swift */; };
+		3577D0DC2845900800159ABA /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3577D0DB2845900800159ABA /* UserView.swift */; };
 		357F7D7826D30FE2004182D6 /* SwiftUITutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F7D7726D30FE2004182D6 /* SwiftUITutorialsApp.swift */; };
 		357F7D7A26D30FE2004182D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F7D7926D30FE2004182D6 /* ContentView.swift */; };
 		357F7D7C26D30FE4004182D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357F7D7B26D30FE4004182D6 /* Assets.xcassets */; };
@@ -44,6 +50,11 @@
 		357039E827B339D800B2AE4D /* EnviromentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentView.swift; sourceTree = "<group>"; };
 		357039EA27B33A9700B2AE4D /* Spacer+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spacer+Constant.swift"; sourceTree = "<group>"; };
 		357039EE27B33F1100B2AE4D /* DateControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateControlView.swift; sourceTree = "<group>"; };
+		3577D0CC28458AD600159ABA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3577D0CE28458B0400159ABA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3577D0D228458CCF00159ABA /* Logging+AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logging+AFError.swift"; sourceTree = "<group>"; };
+		3577D0D728458EFC00159ABA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3577D0DB2845900800159ABA /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		357F7D7426D30FE2004182D6 /* SwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		357F7D7726D30FE2004182D6 /* SwiftUITutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsApp.swift; sourceTree = "<group>"; };
 		357F7D7926D30FE2004182D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +77,7 @@
 			files = (
 				3518296B270A5FEB0086818B /* Kingfisher in Frameworks */,
 				350382E0281F70EF000A16F7 /* ActivityIndicatorView in Frameworks */,
+				3577D0D628458D5400159ABA /* Logging in Frameworks */,
 				350382DA281F6CE7000A16F7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +163,65 @@
 			path = "Enıroment";
 			sourceTree = "<group>";
 		};
+		3577D0C728458A7900159ABA /* ReqResViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3577D0CB28458AAE00159ABA /* Model */,
+				3577D0CA28458AAB00159ABA /* View */,
+				3577D0C928458AA600159ABA /* Service */,
+				3577D0C828458A8A00159ABA /* ViewModel */,
+			);
+			path = ReqResViewModel;
+			sourceTree = "<group>";
+		};
+		3577D0C828458A8A00159ABA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3577D0D728458EFC00159ABA /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3577D0C928458AA600159ABA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3577D0CE28458B0400159ABA /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3577D0CA28458AAB00159ABA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3577D0DB2845900800159ABA /* UserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3577D0CB28458AAE00159ABA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3577D0CC28458AD600159ABA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3577D0D028458CB400159ABA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3577D0D128458CB900159ABA /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3577D0D128458CB900159ABA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3577D0D228458CCF00159ABA /* Logging+AFError.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		357F7D6B26D30FE2004182D6 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +241,7 @@
 		357F7D7626D30FE2004182D6 /* SwiftUITutorials */ = {
 			isa = PBXGroup;
 			children = (
+				3577D0D028458CB400159ABA /* Core */,
 				3584539827139EEB006C3225 /* Features */,
 				3518296C270A624F0086818B /* View */,
 				357F7D7726D30FE2004182D6 /* SwiftUITutorialsApp.swift */,
@@ -192,6 +264,7 @@
 		3584539827139EEB006C3225 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3577D0C728458A7900159ABA /* ReqResViewModel */,
 				350382CD281F69B3000A16F7 /* FoxViewModel */,
 				357039E727B339A900B2AE4D /* Enıroment */,
 				3568CDD1276FD6A600464155 /* CustomTabView */,
@@ -242,6 +315,7 @@
 				3518296A270A5FEB0086818B /* Kingfisher */,
 				350382D9281F6CE7000A16F7 /* Alamofire */,
 				350382DF281F70EF000A16F7 /* ActivityIndicatorView */,
+				3577D0D528458D5400159ABA /* Logging */,
 			);
 			productName = SwiftUITutorials;
 			productReference = 357F7D7426D30FE2004182D6 /* SwiftUITutorials.app */;
@@ -274,6 +348,7 @@
 				35182969270A5FEB0086818B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				350382D8281F6CE7000A16F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				350382DE281F70EF000A16F7 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				3577D0D428458D5300159ABA /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			productRefGroup = 357F7D7526D30FE2004182D6 /* Products */;
 			projectDirPath = "";
@@ -306,16 +381,21 @@
 				357039EB27B33A9700B2AE4D /* Spacer+Constant.swift in Sources */,
 				357039EF27B33F1100B2AE4D /* DateControlView.swift in Sources */,
 				3584539C27139F13006C3225 /* SampleListView.swift in Sources */,
+				3577D0D328458CCF00159ABA /* Logging+AFError.swift in Sources */,
 				357F7D7A26D30FE2004182D6 /* ContentView.swift in Sources */,
 				35CE466027389A31002035E9 /* NavigationUsers.swift in Sources */,
 				3518296F270A62840086818B /* CircleTextImageView.swift in Sources */,
+				3577D0CD28458AD600159ABA /* User.swift in Sources */,
+				3577D0D828458EFC00159ABA /* UserViewModel.swift in Sources */,
 				350382D3281F6A46000A16F7 /* RandomFoxView.swift in Sources */,
 				350382D7281F6C79000A16F7 /* FoxService.swift in Sources */,
 				35F77FC5272630FD00A925A9 /* TweetModel.swift in Sources */,
 				35F77FC72726338B00A925A9 /* TweetCards.swift in Sources */,
 				3568CDD3276FD6B500464155 /* CustomTabView.swift in Sources */,
+				3577D0CF28458B0400159ABA /* UserService.swift in Sources */,
 				357F7D7826D30FE2004182D6 /* SwiftUITutorialsApp.swift in Sources */,
 				350382DD281F6F0E000A16F7 /* FoxViewModel.swift in Sources */,
+				3577D0DC2845900800159ABA /* UserView.swift in Sources */,
 				3568CDD5276FD8F100464155 /* CustomTabIndex.swift in Sources */,
 				357039E927B339D800B2AE4D /* EnviromentView.swift in Sources */,
 				35CE466227389A53002035E9 /* NavigationUserModel.swift in Sources */,
@@ -532,6 +612,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		3577D0D428458D5300159ABA /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -549,6 +637,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35182969270A5FEB0086818B /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		3577D0D528458D5400159ABA /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3577D0D428458D5300159ABA /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
