@@ -16,6 +16,10 @@
 		350F8BAE2858045A00193C2D /* Navigaton+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350F8BAD2858045900193C2D /* Navigaton+View.swift */; };
 		3518296B270A5FEB0086818B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3518296A270A5FEB0086818B /* Kingfisher */; };
 		3518296F270A62840086818B /* CircleTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518296E270A62840086818B /* CircleTextImageView.swift */; };
+		35568920286A754800F37779 /* PropetyWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556891F286A754800F37779 /* PropetyWrapperView.swift */; };
+		35568922286A756200F37779 /* UserWrapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35568921286A756200F37779 /* UserWrapperModel.swift */; };
+		35568924286A75AC00F37779 /* UpperCaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35568923286A75AC00F37779 /* UpperCaseWrapper.swift */; };
+		35568926286A775600F37779 /* NumberCaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35568925286A775600F37779 /* NumberCaseWrapper.swift */; };
 		3568CDD3276FD6B500464155 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3568CDD2276FD6B500464155 /* CustomTabView.swift */; };
 		3568CDD5276FD8F100464155 /* CustomTabIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3568CDD4276FD8F000464155 /* CustomTabIndex.swift */; };
 		357039E927B339D800B2AE4D /* EnviromentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357039E827B339D800B2AE4D /* EnviromentView.swift */; };
@@ -52,6 +56,10 @@
 		350382DC281F6F0E000A16F7 /* FoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxViewModel.swift; sourceTree = "<group>"; };
 		350F8BAD2858045900193C2D /* Navigaton+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigaton+View.swift"; sourceTree = "<group>"; };
 		3518296E270A62840086818B /* CircleTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImageView.swift; sourceTree = "<group>"; };
+		3556891F286A754800F37779 /* PropetyWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropetyWrapperView.swift; sourceTree = "<group>"; };
+		35568921286A756200F37779 /* UserWrapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWrapperModel.swift; sourceTree = "<group>"; };
+		35568923286A75AC00F37779 /* UpperCaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperCaseWrapper.swift; sourceTree = "<group>"; };
+		35568925286A775600F37779 /* NumberCaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCaseWrapper.swift; sourceTree = "<group>"; };
 		3568CDD2276FD6B500464155 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		3568CDD4276FD8F000464155 /* CustomTabIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndex.swift; sourceTree = "<group>"; };
 		357039E827B339D800B2AE4D /* EnviromentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentView.swift; sourceTree = "<group>"; };
@@ -154,6 +162,17 @@
 				3518296E270A62840086818B /* CircleTextImageView.swift */,
 			);
 			path = Circle;
+			sourceTree = "<group>";
+		};
+		3556891C286A751200F37779 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				3556891F286A754800F37779 /* PropetyWrapperView.swift */,
+				35568921286A756200F37779 /* UserWrapperModel.swift */,
+				35568923286A75AC00F37779 /* UpperCaseWrapper.swift */,
+				35568925286A775600F37779 /* NumberCaseWrapper.swift */,
+			);
+			path = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 		3568CDD1276FD6A600464155 /* CustomTabView */ = {
@@ -277,6 +296,7 @@
 		3584539827139EEB006C3225 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3556891C286A751200F37779 /* PropertyWrapper */,
 				35C184FD2857FCA300E15C42 /* Market */,
 				3577D0C728458A7900159ABA /* ReqResViewModel */,
 				350382CD281F69B3000A16F7 /* FoxViewModel */,
@@ -436,12 +456,15 @@
 			files = (
 				35C185072857FDE900E15C42 /* MarketViewModel.swift in Sources */,
 				35CE466427389CFC002035E9 /* UserViewDetail.swift in Sources */,
+				35568922286A756200F37779 /* UserWrapperModel.swift in Sources */,
 				350382D5281F6C3F000A16F7 /* FoxModel.swift in Sources */,
 				357039EB27B33A9700B2AE4D /* Spacer+Constant.swift in Sources */,
 				357039EF27B33F1100B2AE4D /* DateControlView.swift in Sources */,
 				3584539C27139F13006C3225 /* SampleListView.swift in Sources */,
 				3577D0D328458CCF00159ABA /* Logging+AFError.swift in Sources */,
+				35568920286A754800F37779 /* PropetyWrapperView.swift in Sources */,
 				357F7D7A26D30FE2004182D6 /* ContentView.swift in Sources */,
+				35568926286A775600F37779 /* NumberCaseWrapper.swift in Sources */,
 				35CE466027389A31002035E9 /* NavigationUsers.swift in Sources */,
 				3518296F270A62840086818B /* CircleTextImageView.swift in Sources */,
 				3577D0CD28458AD600159ABA /* User.swift in Sources */,
@@ -456,6 +479,7 @@
 				350F8BAE2858045A00193C2D /* Navigaton+View.swift in Sources */,
 				3568CDD3276FD6B500464155 /* CustomTabView.swift in Sources */,
 				3577D0CF28458B0400159ABA /* UserService.swift in Sources */,
+				35568924286A75AC00F37779 /* UpperCaseWrapper.swift in Sources */,
 				35C185052857FD0D00E15C42 /* MarketItem.swift in Sources */,
 				357F7D7826D30FE2004182D6 /* SwiftUITutorialsApp.swift in Sources */,
 				350382DD281F6F0E000A16F7 /* FoxViewModel.swift in Sources */,
