@@ -18,6 +18,7 @@ struct PropetyWrapperView: View {
             TextField("", text: $userWrapperModel.lastName)
             TextField("Number", text: $userWrapperModel.age)
         }
+
     }
 }
 

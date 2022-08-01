@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct TextEditingView: View {
+    @State private var editorValue: String = "👻hello"
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextEditor(text: $editorValue)
+                .frame(width: 200, height: 200, alignment: .leading)
+                .lineLimit(2).padding().background(Color.green)
+        }
     }
 }
 

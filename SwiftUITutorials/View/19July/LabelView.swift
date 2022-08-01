@@ -9,12 +9,24 @@ import SwiftUI
 
 struct LabelView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Label("Heart asdasd ", systemImage: Hearts.heartCircle.rawValue).labelStyle(DefaultLabelStyle())
+            Label("Heart2 asd asd", systemImage: Hearts.heartCircleFill.rawValue).labelStyle(IconOnlyLabelStyle())
+            Label("Heart3 xxxx", systemImage: Hearts.heartCircleFill.rawValue).labelStyle(TitleOnlyLabelStyle())
+        }
     }
 }
+
+enum Hearts: String {
+    case heartCircle = "heart.circle"
+    case heartCircleFill = "suit.heart.fill"
+    case heartCircleSuit = "heart.circle.fill"
+}
+
 
 struct LabelView_Previews: PreviewProvider {
     static var previews: some View {
         LabelView()
     }
 }
+
